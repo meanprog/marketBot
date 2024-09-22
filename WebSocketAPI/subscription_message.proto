@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message SubscriptionMessage {
+    string method = 1;
+    Params params = 2;
+
+    message Params {
+        string channel = 1;
+        string token = 2;
+    }
+}
